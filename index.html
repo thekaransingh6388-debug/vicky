@@ -68,8 +68,8 @@
             border-radius: 50%;
             overflow: hidden;
             background: #1a1a1a;
-            border: 2px solid #06b6d4;
-            box-shadow: 0 8px 20px rgba(6,182,212,0.3);
+            border: 2px solid #f59e0b;
+            box-shadow: 0 8px 20px rgba(245,158,11,0.3);
             flex-shrink: 0;
         }
 
@@ -82,7 +82,7 @@
         .channel-name h2 {
             font-size: 1.6rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #ffffff, #67e8f9);
+            background: linear-gradient(135deg, #ffffff, #fcd34d);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -101,22 +101,22 @@
         }
 
         .verified {
-            background: #06b6d420;
+            background: #f59e0b20;
             padding: 3px 10px;
             border-radius: 30px;
             font-size: 0.65rem;
-            color: #67e8f9;
+            color: #fbbf24;
             font-weight: 600;
         }
 
-        /* BUTTON - New Colour (Cyan/Teal) */
+        /* BUTTON - Orange/Gold Colour */
         .join-btn {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
             width: 100%;
-            background: linear-gradient(135deg, #06b6d4, #0891b2);
+            background: linear-gradient(135deg, #f59e0b, #d97706);
             border: none;
             padding: 16px 12px;
             font-size: 1.1rem;
@@ -126,15 +126,15 @@
             text-decoration: none;
             border-radius: 60px;
             transition: all 0.2s ease;
-            box-shadow: 0 8px 20px rgba(6,182,212,0.4);
+            box-shadow: 0 8px 20px rgba(245,158,11,0.4);
             letter-spacing: 0.5px;
             cursor: pointer;
         }
 
         .join-btn:hover {
-            background: linear-gradient(135deg, #0891b2, #0e7490);
+            background: linear-gradient(135deg, #d97706, #b45309);
             transform: scale(0.98);
-            box-shadow: 0 4px 12px rgba(6,182,212,0.5);
+            box-shadow: 0 4px 12px rgba(245,158,11,0.5);
         }
 
         .join-btn:active {
@@ -155,7 +155,7 @@
             padding: 12px 16px;
             border-radius: 24px;
             margin: 20px 0 20px 0;
-            border-left: 4px solid #06b6d4;
+            border-left: 4px solid #f59e0b;
             font-weight: 500;
             color: #cccccc;
             font-size: 0.85rem;
@@ -171,7 +171,7 @@
         }
 
         .points-section h3 {
-            color: #67e8f9;
+            color: #fbbf24;
             font-size: 1rem;
             margin-bottom: 16px;
             text-align: center;
@@ -198,18 +198,18 @@
         }
 
         .point-text strong {
-            color: #67e8f9;
+            color: #fbbf24;
             font-weight: 700;
         }
 
         .disclaimer {
-            background: #06b6d410;
-            border-left: 3px solid #06b6d4;
+            background: #f59e0b10;
+            border-left: 3px solid #f59e0b;
             padding: 10px 12px;
             margin-top: 16px;
             border-radius: 16px;
             font-size: 0.75rem;
-            color: #67e8f9;
+            color: #fcd34d;
             font-weight: 600;
             text-align: center;
         }
@@ -282,15 +282,11 @@
             </div>
         </div>
 
-        <!-- ✅ BUTTON 1 - TOP (Direct Link - No redirect issues) -->
+        <!-- ✅ BUTTON 1 - TOP (Correct Link) -->
         <div class="top-button">
-   <a href="https://t.me/+RV-nfQ3P1SMw0GU9" 
-   target="_blank"
-   class="join-btn"
-   id="topJoinBtn"
-   onclick="fbq('track', 'Lead');">
-   JOIN TELEGRAM CHANNEL
-</a>
+            <a href="https://t.me/+RV-nfQ3P1SMwOGU9" target="_blank" class="join-btn" id="topJoinBtn" onclick="fbq('track', 'Lead');">
+                📲 JOIN TELEGRAM CHANNEL
+            </a>
         </div>
 
         <div class="tagline">
@@ -326,15 +322,11 @@
             </div>
         </div>
 
-        <!-- ✅ BUTTON 2 - BOTTOM (Direct Link - No redirect issues) -->
+        <!-- ✅ BUTTON 2 - BOTTOM (Correct Link) -->
         <div class="bottom-button">
-            <a href="https://t.me/+RV-nfQ3P1SMw0GU9" 
-   target="_blank"
-   class="join-btn"
-   id="topJoinBtn"
-   onclick="fbq('track', 'Lead');">
-   JOIN TELEGRAM CHANNEL
-</a>
+            <a href="https://t.me/+RV-nfQ3P1SMwOGU9" target="_blank" class="join-btn" id="bottomJoinBtn" onclick="fbq('track', 'Lead');">
+                📲 JOIN TELEGRAM CHANNEL
+            </a>
         </div>
 
         <!-- Trust Signals -->
@@ -353,15 +345,17 @@
 </div>
 
 <script>
-    // Simple console tracking - link already works directly
+    // Both buttons working fine with correct IDs
     document.getElementById('topJoinBtn').addEventListener('click', function() {
-        console.log('✅ Top button clicked - Opening Telegram link');
+        console.log('✅ Top button clicked - Opening Telegram: https://t.me/+RV-nfQ3P1SMwOGU9');
     });
     
     document.getElementById('bottomJoinBtn').addEventListener('click', function() {
-        console.log('✅ Bottom button clicked - Opening Telegram link');
+        console.log('✅ Bottom button clicked - Opening Telegram: https://t.me/+RV-nfQ3P1SMwOGU9');
     });
 </script>
 
+</body>
+</html>
 </body>
 </html>
